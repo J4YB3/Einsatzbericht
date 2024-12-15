@@ -1,0 +1,13 @@
+appId: com.bechtold.einsatzbericht
+productName: Einsatzbericht
+directories:
+  output: dist-electron # Output directory for built files
+files:
+  - dist/ # Include frontend build
+  - src/main/ # Include Electron main process files
+  - package.json
+linux:
+  target:
+    - AppImage
+    - deb
+  # icon: public/icon.png # Path to your app icon
